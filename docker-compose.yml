@@ -1,0 +1,16 @@
+version: '3'
+services:
+  vault:
+    image: vault:0.11.4
+    cap_add:
+      - IPC_LOCK
+    environment:
+      - VAULT_DEV_ROOT_TOKEN_ID=my-root-token
+    ports:
+      - 8200:8200
+  mysql:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=my-secret-pw
+    ports:
+      - 3306:3306

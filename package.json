@@ -2,13 +2,15 @@
   "name": "vault-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "demo.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node demo.js"
   },
   "author": "Yuren Ju <yurenju@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "mysql": "^2.16.0"
+    "node-vault": "^0.9.0",
+    "promise-mysql": "^3.3.1"
   }
 }
