@@ -1,0 +1,14 @@
+{
+  "name": "vault-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yuren Ju <yurenju@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
+}
