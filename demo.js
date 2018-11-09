@@ -1,7 +1,11 @@
 process.env.DEBUG = "node-vault"; // switch on debug mode
 
+require("dotenv").config();
 const mysql = require("promise-mysql");
-const vault = require("node-vault")({ token: "my-root-token" });
+const Vault = require("node-vault");
+
+const { VAULT_TOKEN } = process.env;
+const vault = Vault({ token: VAULT_TOKEN });
 
 let credential;
 

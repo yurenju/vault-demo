@@ -5,12 +5,12 @@ services:
     cap_add:
       - IPC_LOCK
     environment:
-      - VAULT_DEV_ROOT_TOKEN_ID=my-root-token
+      - VAULT_DEV_ROOT_TOKEN_ID=${VAULT_TOKEN}
     ports:
       - 8200:8200
   mysql:
     image: mysql:5.7
     environment:
-      - MYSQL_ROOT_PASSWORD=my-secret-pw
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
     ports:
       - 3306:3306
