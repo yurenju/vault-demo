@@ -48,7 +48,7 @@ async function loop() {
   }
 }
 
-async function main() {
+function main() {
   issueCredential();
   global.setInterval(loop, 1000);
   process.on("SIGTERM", gracefulShutdown);
